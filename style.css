@@ -28,10 +28,54 @@ body {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
+@media (max-width: 768px) {
+    .search-form {
+        width: 80vw;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-form input,
+    .search-form button {
+        width: 100%;
+        border-radius: 0;
+        text-align: center;
+    }
+
+    .card {
+        width: 90vw;
+        padding: 2rem 1rem;
+    }
+
+    .property {
+        font-size: 1rem;
+        flex-direction: column;
+        row-gap: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-form {
+        width: 95vw;
+        margin-bottom: 1.5rem;
+    }
+
+    .search-form button {
+        max-width: 100%;
+        border-left: none;
+        border-top: 1px solid #f5a3a6;
+    }
+
+    .property {
+        font-size: 0.95rem;
+    }
+}
+
 
 .card:hover {
     transform: translateY(-5px);
 }
+
 
 .property {
     color: #333;
